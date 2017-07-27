@@ -1,0 +1,10 @@
+package TestSuit;
+
+public class TC1ApplicationTitleVerification {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

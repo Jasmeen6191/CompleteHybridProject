@@ -1,0 +1,26 @@
+package TestSuit;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import SetBrowser.SelectAndOpenBrowser;
+import launchApplication.OpenApplication;
+
+public class TC1ApplicationTitleVerification {
+	 WebDriver driver;
+	 Logger log = Logger.getLogger("deloyinglogeer");
+public void verifytitle(){
+	String title = driver.getTitle();
+	Assert.assertEquals(title, "+google+");
+	log.assertLog( true, "sucessful page");
+}
+	public static void main(String[] args) {
+	    SelectAndOpenBrowser   Object1 = new SelectAndOpenBrowser();
+		OpenApplication Object2 = new OpenApplication();
+		Object1.SelectBrowser("Safari");
+		Object2.SetURL("http://saavn.com");
+		
+		
+		}
+
+}

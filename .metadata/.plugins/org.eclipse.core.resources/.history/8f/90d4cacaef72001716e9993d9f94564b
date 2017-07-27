@@ -1,0 +1,27 @@
+package ListOfInputElements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.List;
+
+public class InputFields {
+	static WebDriver driver;
+	
+	
+	public  void allElements(){
+		driver = new FirefoxDriver();
+		driver.get("https://www.google.com");
+		  List<WebElement> txtfields = driver.findElements(By.xpath("//input"));
+		System.out.println(Integer.toString(txtfields.size())+"Number of elements");
+		for(WebElement el: txtfields)
+		{
+			System.out.println(el.getTagName()+"::::"+el.getText());
+			
+			
+		}
+	}
+
+}

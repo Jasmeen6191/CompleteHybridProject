@@ -1,0 +1,20 @@
+package ListOfInputElements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import java.util.List;
+
+public class InputFields {
+	static WebDriver driver;	
+		public static void main(String[] args) {
+		List<WebElement> WebElements = driver.findElements(By.xpath("\\input"));
+		for(WebElement ele :WebElements) {
+		    System.out.println("Name + Number===>"+ele.getText());
+		    String s=ele.getText();
+		    s=s.substring(s.indexOf("(")+1, s.indexOf(")"));
+		    System.out.println("Number==>"+s);
+	
+	}}
+
+}

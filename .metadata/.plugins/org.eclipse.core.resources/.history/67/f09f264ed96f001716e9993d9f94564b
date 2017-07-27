@@ -1,0 +1,27 @@
+package ListOfInputElements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import SetBrowser.SelectAndOpenBrowser;
+
+import java.util.List;
+
+public class InputFields {
+	static WebDriver driver;	
+	
+	
+	public static void allElements(){
+		SelectAndOpenBrowser.SelectBrowser("Mozila", "http://www.google.com");
+		  List<WebElement> txtfields = driver.findElements(By.id("lst-ib"));
+		System.out.println(Integer.toString(txtfields.size())+"Number of elements");
+		for(WebElement el: txtfields)
+		{
+			System.out.println(el.getTagName()+"::::"+el.getText());
+			
+			
+		}
+	}
+
+}
