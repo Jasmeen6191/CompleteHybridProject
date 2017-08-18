@@ -1,0 +1,54 @@
+package WritetoExcel;
+
+
+	import java.io.FileInputStream;
+	import java.io.FileNotFoundException;
+	import java.io.IOException;
+	import java.io.InputStream;
+	import java.util.Iterator;
+
+	import org.apache.poi.ss.formula.functions.Rows;
+	import org.apache.poi.ss.usermodel.CellType;
+	import org.apache.poi.xssf.usermodel.XSSFCell;
+	import org.apache.poi.xssf.usermodel.XSSFRow;
+	import org.apache.poi.xssf.usermodel.XSSFSheet;
+	import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+	public class writecontenttoexcel {
+		
+		public void readXLSXFile(String fileName) {
+			InputStream XlsxFileToRead = null;
+			XSSFWorkbook workbook = null;
+			try {
+				 XlsxFileToRead = new FileInputStream(fileName);
+				workbook = new XSSFWorkbook(XlsxFileToRead);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+			XSSFSheet sheet = workbook.createSheet("NewSheet");
+			XSSFRow row =sheet.createRow(1);
+			XSSFCell cell =row.createCell(1);
+			
+			cell.setCellValue("Hello");
+		
+				System.out.println();
+				try
+				{
+					XlsxFileToRead.close();
+				} 
+				catch (IOException e) {
+					e.printStackTrace();
+				}
+			
+		}
+		
+		public static void main(String[] args) {
+			writecontenttoexcel writeExcel = new writecontenttoexcel();
+			writeExcel.readXLSXFile("/Users/jasmeenkaur/Downloads/Bookgggxlsx.xlsx");	
+		
+
+	}
+}

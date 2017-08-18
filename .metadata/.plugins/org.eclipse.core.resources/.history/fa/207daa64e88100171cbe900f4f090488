@@ -1,0 +1,18 @@
+package Xpath;
+import org.testng.AfterClass;
+import org.openqa.selenium.WebDriver;
+
+import SetBrowser.SelectAndOpenBrowser;
+
+public class XpathPractice {
+	WebDriver driver;	
+	SelectAndOpenBrowser object = new SelectAndOpenBrowser(driver);
+	@AfterClass
+	public void method(){
+		object.SelectBrowser("Mozila", "http://www.phptravels.net/", "Hotel");
+		System.out.println("jasmeen");
+		object.quitsession();
+	}
+
+
+}

@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="TestSuit.TC1ApplicationTitleVerification"/>
-      <class name="SetBrowser.SelectAndOpenBrowser"/>
+      <class name="SoftAssertion.SoftAssertTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

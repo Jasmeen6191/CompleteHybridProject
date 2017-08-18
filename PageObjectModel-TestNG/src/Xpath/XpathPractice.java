@@ -1,0 +1,20 @@
+package Xpath;
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+
+import SetBrowser.SelectAndOpenBrowser;
+
+public class XpathPractice {
+	WebDriver driver;	
+	SelectAndOpenBrowser object = new SelectAndOpenBrowser(driver);
+	BookHotel booking = new BookHotel(driver);
+	@Test
+	public void ApplicationHomePage(){
+		object.SelectBrowser("Mozila", "http://www.phptravels.net/", "PHPTRAVELS | Travel Technology Partner");
+		System.out.println("jasmeen");
+		//object.quitsession();
+		booking.search_hotel();
+	}
+
+
+}

@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuit.TC1ApplicationTitleVerification" hash-for-method="validatetittle">validatetittle</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Xpath.XpathPractice" hash-for-method="ApplicationHomePage">ApplicationHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,33 +120,17 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestSuit.TC1ApplicationTitleVerification</span>
+              <span class="class-name">Xpath.XpathPractice</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validatetittle">
-                  </a> <!-- validatetittle -->
-                  <span class="method-name">validatetittle</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;Jasmeens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:18aa:b6c4:b750:98fe%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/wr/m5fy_5t920v22qg01f3prsqm0000gn/T/rust_mozprofile.OOB4yhxthtUy, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=16.5.0, moz:processID=10792.0, browserName=firefox, javascriptEnabled=true, platformName=darwin}]
-Session ID: 511298d7-a22c-b94e-aaee-0847f7f6b978
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
-	at SetBrowser.SelectAndOpenBrowser.SelectBrowser(SelectAndOpenBrowser.java:38)
-	at TestSuit.TC1ApplicationTitleVerification.validatetittle(TC1ApplicationTitleVerification.java:24)
+                  <a name="ApplicationHomePage">
+                  </a> <!-- ApplicationHomePage -->
+                  <span class="method-name">ApplicationHomePage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Xpath.BookHotel.search_hotel(BookHotel.java:28)
+	at Xpath.XpathPractice.ApplicationHomePage(XpathPractice.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,7 +165,7 @@ Session ID: 511298d7-a22c-b94e-aaee-0847f7f6b978
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/wr/m5fy_5t920v22qg01f3prsqm0000gn/T/testng-eclipse-1344058159/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/wr/m5fy_5t920v22qg01f3prsqm0000gn/T/testng-eclipse--117431031/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -190,7 +174,7 @@ Session ID: 511298d7-a22c-b94e-aaee-0847f7f6b978
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestSuit.TC1ApplicationTitleVerification&quot;/&gt;
+      &lt;class name=&quot;Xpath.XpathPractice&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -232,14 +216,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validatetittle')
-data.setCell(0, 2, 'TestSuit.TC1ApplicationTitleVerification')
-data.setCell(0, 3, 20630);
+data.setCell(0, 1, 'ApplicationHomePage')
+data.setCell(0, 2, 'Xpath.XpathPractice')
+data.setCell(0, 3, 14929);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,11 +249,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestSuit.TC1ApplicationTitleVerification</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Xpath.XpathPractice</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validatetittle</span>
+                <span class="method-name">ApplicationHomePage</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

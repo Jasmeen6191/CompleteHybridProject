@@ -2,41 +2,17 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20672" started-at="2017-07-27T17:37:08Z" finished-at="2017-07-27T17:37:28Z">
+  <suite name="Default suite" duration-ms="14984" started-at="2017-08-16T19:28:58Z" finished-at="2017-08-16T19:29:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20672" started-at="2017-07-27T17:37:08Z" finished-at="2017-07-27T17:37:28Z">
-      <class name="TestSuit.TC1ApplicationTitleVerification">
-        <test-method status="FAIL" signature="validatetittle()[pri:0, instance:TestSuit.TC1ApplicationTitleVerification@f6c48ac]" name="validatetittle" duration-ms="20630" started-at="2017-07-27T23:07:08Z" finished-at="2017-07-27T23:07:28Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to decode response from marionette
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'Jasmeens-MacBook-Air.local', ip: 'fe80:0:0:0:18aa:b6c4:b750:98fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/wr/m5fy_5t920v22qg01f3prsqm0000gn/T/rust_mozprofile.OOB4yhxthtUy, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=16.5.0, moz:processID=10792.0, browserName=firefox, javascriptEnabled=true, platformName=darwin}]
-Session ID: 511298d7-a22c-b94e-aaee-0847f7f6b978]]>
-            </message>
+    <test name="Default test" duration-ms="14984" started-at="2017-08-16T19:28:58Z" finished-at="2017-08-16T19:29:13Z">
+      <class name="Xpath.XpathPractice">
+        <test-method status="FAIL" signature="ApplicationHomePage()[pri:0, instance:Xpath.XpathPractice@6eebc39e]" name="ApplicationHomePage" duration-ms="14929" started-at="2017-08-17T00:58:58Z" finished-at="2017-08-17T00:59:13Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'Jasmeens-MacBook-Air.local', ip: 'fe80:0:0:0:18aa:b6c4:b750:98fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/wr/m5fy_5t920v22qg01f3prsqm0000gn/T/rust_mozprofile.OOB4yhxthtUy, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=16.5.0, moz:processID=10792.0, browserName=firefox, javascriptEnabled=true, platformName=darwin}]
-Session ID: 511298d7-a22c-b94e-aaee-0847f7f6b978
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
-	at SetBrowser.SelectAndOpenBrowser.SelectBrowser(SelectAndOpenBrowser.java:38)
-	at TestSuit.TC1ApplicationTitleVerification.validatetittle(TC1ApplicationTitleVerification.java:24)
+              <![CDATA[java.lang.NullPointerException
+	at Xpath.BookHotel.search_hotel(BookHotel.java:28)
+	at Xpath.XpathPractice.ApplicationHomePage(XpathPractice.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -64,11 +40,11 @@ Session ID: 511298d7-a22c-b94e-aaee-0847f7f6b978
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatetittle -->
-      </class> <!-- TestSuit.TC1ApplicationTitleVerification -->
+        </test-method> <!-- ApplicationHomePage -->
+      </class> <!-- Xpath.XpathPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

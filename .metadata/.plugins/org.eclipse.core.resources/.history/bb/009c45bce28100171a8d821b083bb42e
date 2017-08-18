@@ -1,0 +1,22 @@
+package Xpath;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import SetBrowser.SelectAndOpenBrowser;
+
+public class XpathPractice {
+	;
+	
+	public static void main(String[] args){
+		
+		WebDriver driver = new FirefoxDriver();
+		SelectAndOpenBrowser object = new SelectAndOpenBrowser(driver);
+		object.SelectBrowser("Mozila", "http://www.phptravels.net/", "Hotel");
+		System.out.println("jasmeen");
+		object.quitsession();
+	
+	}
+
+}
